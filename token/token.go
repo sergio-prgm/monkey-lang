@@ -1,15 +1,5 @@
 package token
 
-/*
-let five = 5;
-let ten = 10;
-
-	let add = fn(x, y) {
-			x + y;
-		};
-
-let result = add(five, ten);
-*/
 type TokenType string
 
 type Token struct {
@@ -51,11 +41,11 @@ const (
 	// Keywords
 	FUNCTION = "FUNCTION"
 	LET      = "LET"
-	TRUE     = "true"
-	FALSE    = "false"
-	IF       = "if"
-	ELSE     = "else"
-	RETURN   = "return"
+	TRUE     = "TRUE"
+	FALSE    = "FALSE"
+	IF       = "IF"
+	ELSE     = "ELSE"
+	RETURN   = "RETURN"
 )
 
 var Keywords = map[string]TokenType{
